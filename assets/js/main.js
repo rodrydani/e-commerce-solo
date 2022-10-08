@@ -56,6 +56,16 @@ document.addEventListener( "DOMContentLoaded", () =>{
     loadComponent() 
 })
 
+const menuBtn= document.getElementById("menu-btn");
+const menu= document.querySelector(".nav-menu");
+menuBtn.addEventListener("click",()=>{
+ if(menu.classList.contains("visible")){
+  menu.classList.remove("visible");
+ }else{
+  menu.classList.add("visible");
+ }
+});
+
 
 
 
