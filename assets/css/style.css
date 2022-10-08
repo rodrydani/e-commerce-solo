@@ -245,11 +245,13 @@ margin-left: 1rem;
 background-color:rgb(200, 195, 195) ;
 color: black;
 padding: 1rem 1.5rem;
+margin-top: 1rem;
 }
 
 .add-cart-back{
 background-color: var(--button-color);
 color:white;
+margin-top: 1rem;
 padding: 1.5rem 2rem;
 }
 
@@ -282,6 +284,21 @@ padding: 1.5rem 2rem;
   }
   .second-tittle{
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 780px){
+  .home-conteiner{
+    position: relative;
+    row-gap: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .text-home{
+
+    margin-top: 130px;
+
   }
 }
 
