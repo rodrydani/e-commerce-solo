@@ -51,7 +51,7 @@ const items = [
     }, 3000);
 }
 
-
+//------MENU BURGER
 document.addEventListener( "DOMContentLoaded", () =>{
     loadComponent() 
 })
@@ -67,6 +67,19 @@ menuBtn.addEventListener("click",()=>{
 });
 
 
+//---- MENU CAMBIO
+const ubicacionPrincipal=window.scrollY
+const headerMenu=document.getElementById("header");
+
+window.addEventListener("scroll",function() {
+  const ubicacionActual=window.scrollY;
+  console.log(ubicacionActual);
+  if (ubicacionPrincipal>=ubicacionActual){
+    headerMenu.classList.remove('scrollear');
+  }else{
+    headerMenu.classList.add('scrollear');
+  }
+})
 
 
 
