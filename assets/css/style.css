@@ -173,17 +173,10 @@ box-shadow: 2px 2px 5px #999;*/
   border: none;
   font-size: 1rem;
 }
-.bx-menu{
+.bx-menu, .bx-cart, .bx-moon{
   font-size: 1.5rem;
   cursor: pointer;
-}
-.bx-cart{
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.bx-moon{
-  font-size: 1.5rem;
-  cursor: pointer;
+  color:black;
 }
 .bx-sun::before{
   font-size: 1.5rem;
