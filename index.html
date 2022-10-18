@@ -9,6 +9,8 @@
       <link
          href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
          rel="stylesheet">
+      <script src="https://kit.fontawesome.com/fe76e51afd.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
    </head>
    <body>
 <!--*********LOAD***************-->
@@ -55,10 +57,7 @@
          <i class="bx bx-shopping-bag bx-md"></i>
          <span id="cart-counter" class="counter">0</span>
       </div>
-       <!--<button class="back-icon cart-button">
-         <i class='bx bx-cart' id="cart-btn" ></i>
-         <span class="count-cart">0</span>
-       </button>-->
+      
        <button class="back-icon menu-burger">
          <i class='bx bx-menu' id="menu-btn"></i>
        </button>
@@ -105,49 +104,84 @@
    </section>
    
    <!--===========SECTION CART========-->
-         
+   <section class="section-flitro" id="section-flitro">
+      <div class="div-filtro filtro-uno">
+         <button class="Bn" id="All">
+            Show All
+         </button>
+          <small>Show all products</small>
+      </div>
+      <div class="div-filtro filtro-dos">
+         <button class="Bn" id="Hoodies">
+           Hoddies
+         </button>
+          <small>3 products</small>
+      </div class="div-filtro filtro-tres">
+      <div class="div-filtro">
+         <button class="Bn" id="Shirts">
+            Shirts
+         </button>
+          <small>4 products</small>
+      </div>
+      <div class="div-filtro filtro-cuatro">
+         <button class="Bn" id="Sweatshirts">
+            Sweatshirts
+         </button>
+          
+          <small>4 products</small>
+      </div>
+  </section>
+
+  <section class="section-buzo" id="section-buzo">
+      
+  </section>
    <!--==========BAG ICON==============-->
-<!--<div id="cart-shop" class="nav--cart">
-            <i class="bx bx-shopping-bag bx-md"></i>
-            <span id="cart-counter" class="counter">0</span>
-         </div>-->         
+       
          <!--============CART EMPTY===========-->
+      <div class="cart--container__all">
          <div class="cart--container" id="cart-container">
-         <div class="cart" id="cart">
-            <div class="close--cart" id="close-cart">
-               <div class="boton-x">
-                  <i class="bx bx-x"></i>
-               </div>
+            <div class="cart" id="cart">
+               <div class="close--cart" id="close-cart">
+                  
+                  <div class="boton-x">
+                     <i class="bx bx-x"></i>
+                  </div>
+                  <div class="show-products" id="show-products">
+                  
+                  </div>
+                  <div class="elements-cart" id="elements-cart">
+                     <h4>My Cart</h4>
+                     <img
+                        class="empty--cart"
+                        src="./assets/images/empty-cart.png"
+                        alt="empty-cart"
+                        />
+                        <h2>Your cart is empty</h2>
+                        <p>
+                           You can add items to your cart by clicking on the "+" button
+                           on the product page.
+                        </p>
+                        <div class="cart--checkout">
+                           <button
+                           class="button checkout--btn"
+                           id="cart-checkout"
+                           disabled="disabled"
+                           >
+                           Checkout
+                        </button>
+                     </div>
+                     </div>
+                  
                
-               <h4>My Cart</h4>
-               <img
-                  class="empty--cart"
-                  src="./assets/images/empty-cart.png"
-                  alt="empty-cart"
-                  />
-                  <h2>Your cart is empty</h2>
-                  <p>
-                     You can add items to your cart by clicking on the "+" button
-                     on the product page.
-                  </p>
                </div>
-            
-               <div class="price--cart">
-                  <span class="price--cart_item"
-                  ><span id="count--items">0</span> items</span
-                  >
-                  <span class="cart--total" id="cart--total">$0.00</span>
-               </div>
+                  <div class="price--cart">
+                     <span class="price--cart_item"
+                     ><span id="count--items">0</span> items</span
+                     >
+                     <span class="cart--total" id="cart--total">0.00</span>
+                  </div>
                
-               <div class="cart--checkout">
-                  <button
-                  class="button checkout--btn"
-                  id="cart-checkout"
-                  disabled="disabled"
-                  >
-                  Checkout
-               </button>
-            </div>
+               
          </div>
       </div>
    </main>

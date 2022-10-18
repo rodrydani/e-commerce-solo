@@ -32,13 +32,11 @@
     --container-color: hsl(246, 16%, 12%);
     --border-color: hsl(0, 0%, 20%);
 */
-
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
-
 body {
    font-size: var(--normal-font-size);
    font-family: var(--body-font);
@@ -46,7 +44,6 @@ body {
    color: var(--text-color);
    transition: 0.5s;
 }
-
 body.dark {
    --first-color: hsl(182, 53%, 74%);
    --button-color: hsl(246, 16%, 12%);
@@ -58,7 +55,6 @@ body.dark {
    --container-color: hsl(246, 16%, 12%);
    --border-color: hsl(0, 0%, 20%);
 }
-
 /*=====================LOADER================*/
 .loader {
    background-color: var(--body-color);
@@ -75,14 +71,12 @@ body.dark {
 .loader.hide {
    display: none;
 }
-
 .loader--img {
    width: 100px;
    fill: var(--first-color);
    position: relative;
    animation: load 1.5s infinite;
 }
-
 @keyframes load {
    0% {
       top: 0;
@@ -94,9 +88,7 @@ body.dark {
       top: 0;
    }
 }
-
 /*===================BARRA DE NAVEGACIÓN============================ */
-
 .header {
    display: flex;
    flex-direction: column-reverse;
@@ -134,8 +126,6 @@ body.dark {
    /*border-bottom: 1px solid var(--text-color-light);
  box-shadow: 2px 2px 5px #999;*/
 }
-
-/*----------Menu hamburgesa--------*/
 .nav-menu {
    background-color: var(--body-color);
    list-style: none;
@@ -149,6 +139,7 @@ body.dark {
    top: 60px;
    left: 100%;
    transition: 0.5s;
+   text-transform: uppercase;
 }
 .nav-menu.visible {
    left: 0%;
@@ -189,7 +180,6 @@ body.dark {
    right: -44px;
    font-size: 2rem;
 }
-
 .bx-shopping-bag:before {
    content: '\ec0b';
    position: relative;
@@ -197,13 +187,11 @@ body.dark {
    top: 3px;
    font-size: 1.5rem;
 }
-
 #cart-counter {
    right: -9px;
    position: relative;
    top: -9px;
 }
-
 .bx-menu,
 /*.bx-cart,*/
 .bx-moon,
@@ -216,28 +204,10 @@ body.dark {
 .bx-sun::before {
    font-size: 1.5rem;
 }
-/*.count-cart {
-   background-color: var(--title-color);
-   color: var(--body-color);
-   position: absolute;
-   bottom: 0px;
-   right: -7px;
-   width: 16px;
-   height: 16px;
-   border-radius: 50%;
-   font-size: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   right: 54px;
-   bottom: 12px;
-}*/
-
 /*========================HOME==============================*/
 .main {
    overflow: hidden;
 }
-
 .home-conteiner {
    position: relative;
    row-gap: 2.5rem;
@@ -251,7 +221,6 @@ body.dark {
    flex-direction: row-reverse;
    max-width: 100%;
 }
-
 .img-conteiner {
    background-color: var(--first-color);
    width: auto;
@@ -302,7 +271,6 @@ h1 {
    background-color: hsl(0, 0%, 75%);
    color: var(--title-color);
 }
-
 .button--small {
    padding: 1rem 1.5rem;
 }
@@ -321,7 +289,6 @@ h1 {
 a {
    text-decoration: none;
 }
-
 .home__button {
    box-shadow: 0 12px 24px hsl(0deg 0% 10% / 20%);
 }
@@ -330,9 +297,7 @@ button {
    border: none;
    outline: none;
 }
-
 /*===========================CART===============================*/
-
 .bx-x {
    position: relative;
    right: -155px;
@@ -340,13 +305,11 @@ button {
    font-size: 2rem;
    transition: 0.5s;
 }
-
 /*.bx-shoping-bag {
    position: relative;
    right: -44px;
    font-size: 2rem;
 }
-
 .bx-shopping-bag:before {
    content: '\ec0b';
    position: relative;
@@ -359,27 +322,19 @@ button {
 }*/
 .empty--cart {
    width: 300px;
- 
 }
 .close--cart > p {
    padding: 1rem 2rem;
-  
 }
 .cart--container {
    display: flex;
    flex-direction: column;
    align-items: center;
    text-align: center;
- 
 }
-
-
-
 .nav--cart {
    position: relative;
- 
 }
-
 .counter {
    background-color: var(--text-color);
    width: 1.25rem;
@@ -394,7 +349,6 @@ button {
    position: absolute;
    bottom: -5px;
    right: -5px;
-  
 }
 
 .cart--container {
@@ -405,7 +359,6 @@ button {
    top: 0;
    left: 100%;
    transition: 0.5s;
- 
 }
 
 .cart--container.hide {
@@ -422,12 +375,10 @@ button {
   /* max-width: 400px;*/
    right: 0;
   /* box-shadow: -4px 5px 10px var(--text-color-light);*/
-  
 }
 
 .close--cart {
    font-size: 1rem;
- 
    top: 1rem;
    right: 1.5rem;
    display: flex;
@@ -436,13 +387,32 @@ button {
    padding-top: 3rem;
    transition: 0.5s;
 }
+.products-aside{
+   display: flex;
+   align-items: center;
+   padding-top: 2rem;
+}
+.elements-cart{
+ padding-top: 3rem;
+ display: initial;
+}
+.elements-cart.open{
+   display: none;
+  }
+  .cont-btn-sumaresta{
+   display: flex;
+   justify-content: space-evenly;
+  }
+.img-cart{
+   width: 100px;
+    height: 100px;
+}
 .boton-x{
    margin-bottom: 4rem;
 }
-
 .product-card {
    padding: 1rem;
-   border: 1px solid var(--text-color);
+  
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -454,14 +424,91 @@ button {
    flex-direction: row;
    justify-content: space-around;
    position: relative;
-   top: 457px;
+   top: 100px;
 }
-.checkout--btn {
-   
+.checkout--btn {  
    right: 46px;
    top: 510px;
- 
 }
+.producto-aside{
+   display:flex;
+   align-items: center;
+   padding-bottom:2rem ;
+}
+.btn-trash{
+   color:var(--first-color);
+}
+.price-color{
+   color:var(--first-color); 
+}
+/*-------------- Buzo -----------------*/
+.section-flitro{
+   display: grid;
+   justify-content: space-between;
+   text-align: center;
+   grid-template-columns: repeat(2, 1fr);
+   max-width: 360px;
+   margin: auto;
+   padding: 60px 0 0 0;
+ }
+ .div-filtro{
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+ }
+ .section-buzo{
+   margin-top: 2rem;
+   width: 100%;
+   display: grid;
+   justify-content: center;
+   text-align: left;
+   gap: 2rem;
+ }
+ h3, small{
+   display: inline;
+   justify-content: center;
+ }
+ .div-texto__buzo > h3, h4{
+   color: var(--title-color);
+ }
+ 
+ .div-texto__buzo > h3{
+   font-size: 20px;
+ }
+ .div-texto__buzo > h4{
+   font-size: 16px;
+ }
+ .img-buzo-lista{
+   height: 200px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   background-color: var(--card-color);
+ }
+ .div-texto__buzo{
+   padding: 1rem;
+   background-color: var(--container-color);
+ }
+ .div-buzo{
+   position: relative;
+ }
+ .button-buzo{
+   border: none;
+   border-radius: 50%;
+   padding: 10px;
+   display: inline-flex;
+   font-size: 20px;
+   position: absolute;
+   right: 10px;
+   top: 200px;
+   background-color: var(--body-color);
+   color: var(--title-color);
+   box-shadow: 0 4px 12px hsl(206deg 4% 4% / 20%);
+ }
+
+ 
+
+
+
 
 /*=================FOOTER==================== */
 footer {
@@ -566,8 +613,34 @@ ul {
       padding: 5rem;
    }
 }
-
 @media screen and (min-width: 780px) {
+   .section-flitro{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      justify-content: end;
+      align-items: center;
+      max-width: 680px;
+      margin: 0;
+     }
+     .section-buzo{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: start;
+      align-items: center;
+      max-width: 300px;
+      padding: 60px 0 0 0;
+     } 
+     .div-buzo{
+       margin: auto;
+       justify-content: start;
+     }
+  .home{
+   padding: 0 10rem;
+  }
+  .icon-box{
+   padding-right: 6rem;
+  }
    .home-conteiner {
       position: relative;
       row-gap: 2.5rem;
@@ -590,14 +663,26 @@ ul {
       transition: 0.5s;
       display: flex;
       justify-content: space-between;
-      top: 39px;
+      top: 32px;
       left: 9rem;
    }
    .nav-menu-item1 {
       margin-top: 0;
       margin-bottom: 0;
       margin-right: 10px;
+      text-transform: lowercase;
+      
    }
+  
+   .nav-menu-item1::first-letter{
+      text-transform: uppercase;
+    }
+    .nav-menu-item2{
+      text-transform: lowercase;
+    }
+    .nav-menu-item2::first-letter{
+      text-transform: uppercase;
+    }
    .nav-menu-link {
       text-decoration: none;
       font-size: 1rem;
@@ -609,9 +694,50 @@ ul {
       position: relative;
       right: -24px;
    }
+   .cart--container {
+      width: 475px;
+      height: 100%;
+      margin-left: calc(100% - 475px);
+      position: fixed;
+      top: 0;
+   }
+  
+  .cart {
+   max-width: 475px;
+  }
+  .div-texto__buzo>h4{
+   font-size: 2rem;
+  }
+  .Bn{
+   font-size: 2rem;
+  }
 }
 
-
+@media screen and (min-width: 1130px){
+   .section-flitro{
+      max-width: 860px;
+      margin-left: 15%;
+      margin-top: 4rem;
+   }
+   .section-buzo{
+      gap: 8rem;
+      text-align: center;
+      display: flex;
+      margin-left: 5%;
+   }
+   .bar-nav{
+      padding: 0 10rem;
+   }
+   .nav-menu-item1 {
+      padding-left: 10rem;
+   }
+  .img-buzo-lista{
+   height: 300px;
+  }
+  .div-buzo-solo{
+   margin-left: 30rem;
+  }
+}
 
 
   
